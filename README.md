@@ -19,7 +19,7 @@ Linux environment
 ## Usage
 An example usage can be found in main.cpp
 
-```
+```cpp
 #include <iostream>
 #include <thread>
 #include "ServerSocket.h"
