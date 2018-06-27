@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
 	std::thread server_thread([&server](){
 		while (true) {
 			std::cout << "Waiting for a client.." << std::endl;
-			net::Socket* client = server->accept();
+			net::Socket* client = server->accept(); // this line blocks until a client connects
 			if (!client->valid()) {
 				delete client;
 				continue;
